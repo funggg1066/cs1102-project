@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic - CS1102 Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CS1102 - Course Project - 2025 / 2026 Semester B</h1>
+        <ul>
+        <h2>Project Topic: Robo-Advisory: Portfolio Construction and Risk Profiling</h2>
+        </ul>
+        
+        <ul>
+            <p>Group Members: </p>
+            <li>Yip Hiu Fung - 58605568</li>
+            <li>Tsang Shun Him - 58640429</li>
+            <li>Yau Man Tik - 60173989</li>
+        </ul>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Background</a></li>
+            <li><a href="mechanic.html">Mechanic</a></li>
+            <li><a href="mechanic2.html">Asset allocation methodologies</a></li>
+            <li><a href="mechanic3.html">Performance Comparison</a></li>
+            <li><a href="limitation.html">Limitation</a></li>
+            <li><a href="summary.html">Summary</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Mechanic</h2>
+        <p><strong>• How robo-advisory systems work:</strong></p>
+
+<p>
+    
+    how robo-advisory systems work: The central challenge is that users provide qualitative, subjective inputs (e.g., "I'm moderately aggressive," "I want to retire in 20 years"), but the financial engine requires quantitative, mathematical inputs. To first translate “Risk Preferences”, it need to be defined what is risk preferences. In commercial world, the term risk profile has massively superseded and replaced risk preferences in the implementation, it also include factors that may influence and/or constrain the investor’s willingness to accept risk (Klement, 2015). The primary work robo-advisor is to convert user inputs into math variables then run a mathematical model to find the best portfolio thereafter select specific assets to implement the strategy. To test real user risk profile reliably, robo-advisor may use questionnaires and seek patterns inferred from behavior. The user answers certain number of multiple-choice questions. Each answer is scored and mapped to a Risk Aversion Coefficient (λ - lambda). λ will reflects user’s risk profile of whether they penalize variance (risk) heavily, e.g. Score: 1 - High λ, very risk-averse, Score: 5 - Low λ, risk-seeking. Robo may imply Expected Utility Theory. It assumes the user wants to maximize U = Expected Return - 0.5 * λ * Variance. Another method adjusts this score based on cognitive biases. According to real trade situations and records, if a user panicked during a market dip, the system might lower their risk tolerance by certain λ score.
+    
+</p>
+<img src="Top-Characteristics-of-Finance-FAQ-What-are-Finance-Characteristics-Frequently-Asked-Questions.jpeg" style="max-width:25%; height:auto;">
+
+
+<p>
+    
+    Translating investment horizons will affect portfolio even with same risk preference. It is divided into time diversification & the Glide Path. Time diversification implies the investment period how long. Short Horizon (like 0-5 years): High "sequence of returns risk". The robo overrides the risk score, forcing high allocation to low-volatility assets (cash, short-term bonds). Long Horizon (10+ years): More time for recovering from failure. The robo applies a time decay factor to manage risk. The Glide Path refers to a pre-programmed schedule of asset allocation changes over time. Robo-advisor automatically changes the portfolio ratio along this path each year, independent of market conditions.
+
+</p>
+
+<p>
+    
+    Translating "Financial Goals" which will provide the target return and constraints. Different goals have different targets that aim for the return and corresponding portfolio. When a user tells a robo-advisor that they have a specific financial goal, such as saving for a house down payment in ten years, generating monthly income during retirement, or preserving capital for an emergency fund, the system must translate those qualitative goals into a set of quantitative constraints that the portfolio optimization model can calculate. Each goal type implies different primary objectives and expect return. For wealth accumulation, the objective is real return, like real interest rate five percent per year, and the main constraint will be keep volatility within a band that does not risk missing the time horizon. The robo-advisor therefore sets a ratio in high equity with low bond allocation that provided the growth needed to meet a return target like five percent.
+
+</p>
+<img src="17442897.jpeg" style="max-width:25%; height:auto;">
+
+
+<p>
+    
+    In more advanced robo advisors, multiple financial goals are compoundly handled using goal based optimization. The system treats each goal as a separate sub portfolio with dividing its own risk preference, investment horizon, and financial goal. For example, the user’s retirement savings might be allocated eighty percent stocks and twenty percent bonds because the horizon is thirty years long, while their vacation home savings are allocated twenty percent stocks and eighty percent bonds because they plan to buy in three years shortly. The user have one plan, but behind the model the robo advisor runs independent optimizations for each goal and thus combines the results into one overall portfolio which consider all the different constraints at the same time. This translation from financial goal like “save $1m for a house” into accurate mathematical constraints with target return, maximum overdraft, liquidity requirement, or glide path. Cause robo advisor to translate from conversation to a specific, implementable asset allocation.
+</p>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 [CS1102]. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
